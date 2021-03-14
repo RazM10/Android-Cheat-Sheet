@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <link rel="stylesheet" href="style_menu.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="prism.css">
-        <script src="prism.js"></script>
-        <link rel="stylesheet" href="style.css">
-    <title>Android Cheatsheet</title>
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script>  -->
+    <script> 
+        $(function(){
+            $("#icon").load("flutter/1_icon.html"); 
+        });
+    </script> 
+
+    <title>Flutter Cheatsheet</title>
 </head>
 
 <body>
     <nav>
         <span class="logo"><img src="copy.png" alt=""></span>
         <div class="content center">
-            This Android Cheatsheet is For You!
+            This Flutter Cheatsheet is For You!
         </div>
     </nav>
-    <div class="container">
-        <a href="index_flutter.html">Flutter</a>
-        <a href="#test">Test</a>
+
+	<ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul>
+
+	<div class="container" style="margin-left:16%;padding:1px 16px;height:1000px;">
         <ol>
             <li>
-                Button
-                <pre class="language-xml"><code>&lt;com.google.android.material.button.MaterialButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:text="Button"
-    app:icon="@drawable/ic_volume_off"
-    app:iconGravity="start"
-    app:iconSize="16dp"
-    app:cornerRadius="10dp"
-    app:strokeWidth="2dp"
-    app:strokeColor="@color/teal_200"/&gt;</code></pre>
+                icon
+                <div id="icon"></div>
             </li>
 
             <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
@@ -96,7 +102,14 @@
                 <pre class="language-js"><code>var i = 45; </code></pre>
             </li> 
         </ol>
-    </div>
-</body>
+	  
+	  
+	  
+	  
+	  
+	  
+	  <p id="about">Hello</p>
+	</div>
 
+</body>
 </html>
